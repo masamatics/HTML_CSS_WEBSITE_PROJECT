@@ -1,0 +1,176 @@
+*{
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-ms-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+body{
+background-color: grey;
+font-family: Arial;
+}
+
+#container{
+background-color: grey;
+width: 810px;
+margin-top: 20px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#header{
+border-radius: 5px;
+background-color: #00BFFF;
+color: white;
+padding: 30px;
+margin-bottom: 5px;
+display: -webkit-flex;
+display: flex;
+}
+
+#icon{
+border-radius: 90px;
+width: 180px;
+height: 180px;
+}
+
+#header h1{
+margin-top: 60px;
+margin-left: 10px;
+padding: 20px;
+width: auto;
+height: auto;
+}
+
+#content{
+padding: 0px;
+}
+
+#nav{
+border-radius: 5px;
+padding: 5px;
+background-color: white;
+margin-top: 5px;
+width: 200px;
+float: left;
+}
+
+#nav h3{
+text-align: center;
+}
+
+#nav ol{
+list-style-type: none;
+padding: 5px;
+}
+
+#nav ol li{
+padding: 3px;
+}
+
+#main{
+border-radius: 5px;
+padding: 10px;
+background-color: white;
+width: 600px;
+height: 900px;
+float: right;
+margin-top: 5px;
+margin-bottom: 20px;
+overflow: scroll;
+}
+
+ul li{
+padding: 3px;
+}
+
+.screenshot{
+margin-left: 10px;
+border-style: solid;
+padding: 0px;
+}
+
+#devtool{
+width: 550px;
+height: 350px;
+}
+
+#treelike{
+width: 400px;
+height: 350px;
+}
+
+.inside{
+margin-top: 10px;
+margin-left: 30px;
+}
+
+.cssref{
+color: #096681;
+background-color: #E8F4FB;
+padding: 10px;
+}
+
+#cssref0{
+margin-left: 10px;
+width: 500px;
+height: 130px;
+}
+
+#cssref1{
+margin-left: 30px;
+width: 300px;
+height: 270px;
+}
+
+#cssref2{
+margin-left: 30px;
+width: 300px;
+height: 140px;
+}
+
+#cssref3{
+margin-left: 30px;
+margin-bottom: 20px;
+width: 380px;
+height: 60px;
+}
+
+#cssref4{
+margin-left: 10px;
+width: 250px;
+height: 90px;
+}
+
+#cssref5{
+margin-left: 10px;
+width: 300px;
+height: 180px;
+}
+
+#cssref6{
+margin-left: 10px;
+width: 300px;
+height: 90px;
+}
+
+#cssref7{
+margin-left: 10px;
+width: 450px;
+height: 40px;
+}
+
+table, th, td {
+border: 1px solid black;
+text-align: left;
+}
+
+#footer{
+border-radius: 5px;
+clear: both;
+padding: 10px;
+background-color: #999999;
+color: white;
+text-align: center;
+width: auto;
+}

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"> <!-- This line defines something called "character encoding"
+    This will allow the browser to display certain characters (such as non-Roman letters) correctly.
+    You should include this line in the head of all of your webpages. -->
+    <title>Masa's Notes for HTML/CSS</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+<body>
+<div id="container">
+  <div id="header">
+
+    <img id="icon" src="images/Masa.jpg" alt="icon">
+
+    <h1>Masa's Note for HTML/CSS</h1>
+
+  </div>
+
+  <div id="content">
+    <div id="nav">
+      <h3>Lesson Items</h3>
+      <ol>
+        <li><a href="#lesson1">Lesson1</a></li>
+          <li><ul>
+            <li><a href="#lesson1-1">The World Wide Web</a></li>
+            <li><a href="#lesson1-2">Basic HTML Elements</a></li>
+            <li><a href="#lesson1-3">HTML Attributes</a></li>
+            <li><a href="#lesson1-4">More HTML Elements</a></li>
+          </ul></li>
+
+        <li><a href="#lesson2">Lesson2</a></li>
+          <li><ul>
+            <li><a href="#lesson2-1">Developer Tools</a></li>
+            <li><a href="#lesson2-2">Tree-like structure</a></li>
+            <li><a href="#lesson2-3">HTML-CSS-DOM</a></li>
+            <li><a href="#lesson2-4">Boxes, Grids and Rules in HTML</a></li>
+          </ul></li>
+
+        <li><a href="#lesson3">Lesson3</a></li>
+          <li><ul>
+            <li><a href="#lesson3-1">Adding Style</a></li>
+            <li><a href="#lesson3-2">Understanding CSS</a></li>
+            <li><a href="#lesson3-3">How to write CSS</a></li>
+            <li><a href="#lesson3-4">Semantic Tags</a></li>
+            <li><a href="#lesson3-5">The Boxes</a></li>
+            <li><a href="#lesson3-6">Positioning Boxes</a></li>
+            <li><a href="#lesson3-7">Code, Test, Refine</a></li>
+            <li><a href="#lesson3-8">Verifying HTML and CSS</a></li>
+          </ul></li>
+      </ol>
+    </div>
+
+    <div id="main">
+      <h2 id="lesson1">Lesson 1</h2>
+
+
+        <h3 id="lesson1-1">The World Wide Web</h3>
+        <p>
+          The web is composed largely of HTML documents.
+          HTML stands for Hypertext Markup Languageand is the language the browsers use to interpret web pages.
+          The components of the web include the client (your computer and browser), the Internet, and servers.
+          The client and servers interact through something called the Hypertext Transfer Protocol (HTTP).
+        </p>
+
+
+        <h3 id="lesson1-2">Basic HTML Elements</h3>
+          <p>
+            <b>HTML Elements</b> are what we use to tell a web browser how to display content in a web page.
+
+            Most HTML elements consist of an <b>Opening</b> and a <b>Closing</b> tag with some <b>content</b> between them.
+            <br><br>
+            For example:
+            <br>
+            <span style="color:#096681">&lt;b&gt;text&lt;/b&gt;</span>
+            makes the 'text' content <b>bold</b>
+            <br>
+            <span style="color:#096681">&lt;em&gt;text&lt;/em&gt;</span>
+            makes the 'text' content <em>italic</em>
+          </p>
+
+
+          <h3 id="lesson1-3">HTML Attributes</h3>
+          <p>
+            Some elements accept additional values called <b>attributes</b> in their opening tags. Attributes provide additional information to the browser.
+            For example, the anchor tag takes an attribute called href that defines a URL to link to.
+          </p>
+
+          <p>
+            <span style="color:#096681">&lt;a href="url"&gt;link&lt;/a&gt;</span>
+            creates a hyperlink to the href attribute value url and names it link
+            <br><br>
+            <span style="color:#096681">&lt;img src="url" alt="text"&gt;</span>
+            displays the image hosted at the src attribute value "url" (this can also be a path to a local file on your computer).
+            If the image cannot be displayed, then the alt attribute value "text" is shown.
+
+
+
+          </p>
+
+          <h3 id="lesson1-4">More HTML Elements</h3>
+
+
+            <ul>
+              <li><span style="color:#096681">&lt;p&gt;text&lt;/p&gt;</span>
+                defines a paragraph. The content of the <span style="color:#096681">&lt;p&gt;</span>
+                element is in a "box."</li>
+
+              <li><span style="color:#096681">&lt;br&gt;</span>
+                creates a line break.</li>
+
+                <li><span style="color:#096681">&lt;div&gt;content&lt;/div&gt;</span>
+                  creates a "box" container element.</li>
+
+                <li><span style="color:#096681">&lt;span&gt;content&lt;/span&gt;</span>
+                  creates an "inline" container element.</li>
+              </ul>
+
+
+
+
+  <hr>
+
+      <h2 id="lesson2">Lesson 2</h2>
+
+        <h3 id="lesson2-1">Developer Tools</h3>
+
+          <div class="devtool">
+          <p>
+            You can access to Google Chrome Developer tool from Settings > Other Tools >
+            Developer Tool
+          </p>
+
+          <img id="devtool" class="screenshot" src="images/1_DevTool.png" alt="Developer Tool">
+
+          <p>
+            Quiz: Observing Wikipedia's page, what statements are true?
+            <br>
+            Answer:
+          </p>
+            <ul>
+              <li>All elements are rectangular</li>
+              <li>You can read the same text as on the page</li>
+            </ul>
+
+
+          <p>
+            In the element tab in developer tool, as you click different triangles,
+            it points out what the code describes on the web page.
+            This shows that inline or block elements in HTML.
+          </p>
+          </div>
+
+          <h3 id="lesson2-2">Tree-like Structure</h3>
+
+          <div class="treelike">
+          <p>HTML webpage has a tree-like structure,
+          which shows elements inside elements as you can see below.
+          </p>
+
+          <img id="treelike" class="screenshot" src="images/2_Treelike.png" alt="Tree Like Structure">
+
+          <p>For more information, take a look at
+            <a href="https://en.wikipedia.org/wiki/Tree_structure">Tree structure on Wikipedia</a>
+          </p>
+          </div>
+
+          <h3 id="lesson2-3">HTML-CSS-DOM</h3>
+
+          <ul>
+            <li>
+              HTML - HyperText Markup Language - has specific Syntax and Rule.
+              Generally describes content between tags.
+            </li>
+            <li>
+              CSS - Cascading Style Sheets - adds style to the contents that were described in HTML.
+            </li>
+            <li>
+              DOM - Document Object Model - a cross-platform and language-independent convention for representing and interacting with objects in HTML (and other markup languages).
+              The nodes of every document are organized in a tree structure, called the DOM tree.
+            </li>
+          </ul>
+
+          <div>
+            Notes:
+            <ul>
+              <li>HTML and CSS are both "languages"</li>
+              <li>HTML controls the "structure" of a web page</li>
+              <li>CSS controls the "style" of a page.</li>
+              <li>When programmers talk about the "DOM" (Document Object Model)
+                they are talking about the tree-like structure of a page.</li>
+              </ul>
+          </div>
+
+
+          <h3 id="lesson2-4">Boxes, Grids and Rules in HTML</h3>
+
+          <p>
+            Everything on the webpage is boxes.
+            Thinking of things in terms of boxes on the webpage is a lot easier as web developer.
+            For example, you can rearrange positioning of the contents in the webpages.
+          </p>
+
+          <p>
+            When you are making webpage, in HTML each box is represented by div tab:
+            <span style="color:#096681">&lt;div&gt;</span>.
+          </p>
+
+          <h4>The relationship between indented HTML and boxes</h4>
+          <p>
+            When you read an HTML document as text, you see a wave of changing indentations going up and down the left side of the document.
+            The more indented an element is, the more deeply nested its corresponding "box" is.
+          </p>
+
+          <h4>Text Editors (for programming)</h4>
+          <p>When writing code, programmers use special text editors (like Sublime Text for example).
+            These editors make the programmer's life easier.
+            For example, some text editors will automatically generate a closing HTML tag when you write an opening tag.
+          </p>
+
+    <hr>
+    <h2 id="lesson3">Lesson 3</h2>
+
+      <h3 id="lesson3-1">Adding Style</h3>
+
+        <p>In the HTML document,
+          you need to link to CSS document, which can be done as in highlights below.</p>
+
+          <div id="cssref0" class="cssref">
+            &lt;!DOCTYPE html&gt; <br>
+            &lt;html&gt;<br>
+            &lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="background-color: yellow">&lt;link rel = "stylesheet" type="text/css" href="style.css"&gt;</span><br>
+            &lt;/head&gt;
+          </div>
+
+          <p>In this case, the HTML document is linking the CSS document named <span style="background-color: yellow">style.css</span>.
+            The CSS document must be saved in the same location as HTML document in order for browser to link them together. </p>
+
+      <h3 id="lesson3-2">Understanding CSS</h3>
+
+        <p>CSS is...</p>
+          <p>
+            As a Search and Replace tool.
+            You can identify and find ("match" in CSS terminology) a class or a tag of the element
+            <br><br>
+            Also itan be defined in different ways such as following;
+          </p>
+          <div class="inside">
+            <p>- the default style of a browser (different browsers have slightly different styles)</p>
+            <p>- stylesheet in a separate file (this is what you will be mostly using)</p>
+
+            <div id="cssref1" class="cssref">
+            &lt;head&gt;<br>
+            &nbsp;&nbsp;&lt;link rel="stylesheet" href="main.css"&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            &nbsp;&nbsp;&lt;div&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This will have a red background.<br>
+            &nbsp;&nbsp;&lt;/div&gt;<br>
+            &lt;/body&gt;<br><br>
+
+            -----(on a separate .css file)---------<br>
+            div {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;background-color : red;<br>
+            }
+            </div>
+
+            <p>- stylesheet inside HTML (this can be done for small projects but is not ideal)</p>
+            <div id="cssref2" class="cssref">
+            &lt;head&gt;<br>
+            &nbsp;&nbsp;&lt;style&gt;<br>
+            &nbsp;&nbsp;div {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color : red; <br>
+            &nbsp;&nbsp;} <br>
+            &nbsp;&nbsp;&lt;/style&gt;<br>
+            &lt;/head&gt;
+            </div>
+
+
+            <p>- inline style in an element (this can also be done but should be avoided)</p>
+            <div id="cssref3" class="cssref">
+            &lt;div style="background-color: red; color: white"&gt;<br>
+            This div will have a red background and white text.
+            </div>
+
+          </div>
+
+
+          <p>"Cascading" means that rules are applied to all of those element's child elements.
+          However, if multiple rules are set to child elements, the more specific rule takes effect.</p>
+
+          <p>However, Sometimes these rules are treated differently
+          depending on the kind of browsers (Google Chrome, Safari, Firefox, Internet Explorer).
+          <br>
+          <a href="http://necolas.github.io/normalize.css/">Normalize.css</a> precisely targets the style that need normalizing
+          and makes browsers render all elements more consistently and in line with modern standards.</p>
+
+
+    <h3 id="lesson3-3">How to write CSS</h3>
+
+      <p>It looks like this</p>
+
+      <div id="cssref4" class="cssref">
+      h1 {<br>
+      &nbsp;&nbsp;background-color : black;<br>
+      &nbsp;&nbsp;color: white;<br>
+      }
+      </div>
+
+      <p>Simply put the selector / id attribute in HTML,
+      followed by braces {}, which contains style elements inside.
+      In the example above, selector,
+      h1 has a rule defined as background color of black and text color of white.</p>
+
+      <p>CSS-TRICKS - This website shows how CSS works well.<br>
+      <a href="https://css-tricks.com/how-css-selectors-work/">https://css-tricks.com/how-css-selectors-work/</a>
+      </p>
+
+      <p>To find types of style in CSS you are looking for, go to below<br>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">MDN CSS Reference</a>
+      </p>
+
+      <div>
+      CSS Vocabularies:
+
+      <table id="cssvocab">
+      <tr>
+      <td>CSS</td>
+      <td>Cascading Style Sheets</td>
+      </tr>
+
+      <tr>
+      <td>Style</td>
+      <td>This word can refer to many things and so it can be confusing.
+      It can refer to: <br>
+      <ul>
+        <li>The HTML element. For example: &lt;style&gt; div {color:blue} &lt;/style&gt; </li>
+        <li>The HTML attribute. For example: &lt;div&gt; style="color : blue">this text would be blue&lt;/div&gt; </li>
+        <li>The general look of a web page. For example: <em>"I like that site's style."</em></li>
+        <li>A verb. For example: <em>"I'm making progress on my page. The structure is all done but now I have to style it."</em></li>
+      </ul>
+      </td>
+      </tr>
+      <tr>
+      <td>Rule</td>
+      <td>a line of CSS code describing the value that a certain attribute should take.</td>
+      </tr>
+      <tr>
+      <td>Property</td>
+      <td>The property you want to change</td>
+      </tr>
+      <tr>
+      <td>Value</td>
+      <td>The value that you want to assign to the attribute</td>
+      </tr>
+      <tr>
+      <td>Selector</td>
+      <td>The name that you use to in order to target the elements
+      that are assigned to a class or id attribute in the HTML</td>
+      </tr>
+      <tr>
+      <td>Class</td>
+      <td>A class refers to a group of elements that can be styled together.
+      Class names should not contain periods or any other punctuation marks such as class="1.1"</td>
+      </tr>
+      <tr>
+      <td>ID</td>
+      <td>ID's are unique identifiers that uniquely identifies an element in HTML</td>
+      </tr>
+      </table>
+      </div>
+
+    <h3 id="lesson3-4">Semantic Tags</h3>
+
+      <p>Semantic Tags are like selectors
+      <br>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Content_sectioning">https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Content_sectioning</a>
+      </p>
+
+    <h3 id="lesson3-5">The Boxes</h3>
+
+      <p>Understanding the box model is important in order to build a website.
+      <br>
+      Content is wrapped by padding, border and margin.
+      You can change these in developer tools in the browser.
+      </p>
+      <ul>
+        <li><b>Padding</b> is inside the box to wrap content</li>
+        <li><b>Border</b> is the line of the box</li>
+        <li><b>Margin</b> is the space between boxes</li>
+      </ul>
+
+      <img id="boxmodel" src="images/3_boxmodel.png" alt="Box Model">
+
+      <p>In order to set box-sizing definition and outline that allows you to easily see all the boxes on your page,
+      put the below code in the css file. </p>
+
+      <div id="cssref5" class="cssref">
+      * { <br>
+      &nbsp;&nbsp;outline: 1px solid red !important; <br>
+      } <br>
+      * { <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;-webkit-box-sizing: border-box; <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;-moz-box-sizing: border-box; <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;-ms-box-sizing: border-box; <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;box-sizing: border-box; <br>
+      }
+      </div>
+
+    <h3 id="lesson3-6">Positioning the Boxes</h3>
+
+      <p>Flexbox (Flexible box) - you can let divs appear next to each other by adding below in .css file</p>
+
+      <div id="cssref6" class="cssref">
+      .app { <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;display: -webkit-flex; <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;display: flex; <br>
+      }
+      </div>
+
+      <p>Go to <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS-TRICKS</a> for good guide of flexbox</p>
+
+      <h4>Adding Images</h4>
+
+        <p>To add images, you need to create a folder under top directory and name it such as "image."
+        <br>You can add alt as in alternative in case that browser cannot display images.</p>
+
+        <div id="cssref7" class="cssref">
+        &lt;img src="image/app.png" alt="This is a screenshot"&gt;
+        </div>
+
+    <h3 id="lesson3-7">Code, Test, Run</h3>
+
+      <p>5 Steps to creating a website</p>
+      <ol>
+        <li>Look for natural boxes</li>
+        <li>Look for repeated styles & semantic elements</li>
+        <li>Write your HTML</li>
+        <li>Apply styles (From BIGGEST to smallest)</li>
+        <li>Fix things</li>
+      </ol>
+
+    <h3 id="lesson3-8">Verifying HTML and CSS</h3>
+
+    <p>You can use following websites to verify if your HTML and CSS codes are properly used</p>
+
+    To verify HTML: <a href="http://validator.w3.org/#validate_by_input">http://validator.w3.org/#validate_by_input</a><br>
+    To verify CSS: <a href="http://jigsaw.w3.org/css-validator/#validate_by_input">http://jigsaw.w3.org/css-validator/#validate_by_input</a>
+
+
+</div>
+</div>
+</div>
+<div id="footer">
+Copyright &copy; Masa Ogawa
+
+</div>
+</body>
+</html>
